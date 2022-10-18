@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.grid{
+	text-align: center;
+	font-weight: bold;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 1% 1%;
+	grid-template-areas: 
+	"head head head head head head head head head head"
+	"side side main main main main main main nav nav"
+	"side side foot foot foot foot foot foot foot foot"
+}
+.head{
+	background-color: pink;
+	cursor: pointer;
+	grid-area: head;
+}
+.nav{
+	background-color: yellow;
+	cursor: pointer;
+	grid-area: nav;
+}
+.side{
+	background-color: orange;
+	cursor: pointer;
+	grid-area: side;
+}
+.main{
+	background-color: grey;
+	cursor: pointer;
+	grid-area: main;
+}
+.foot{
+	background-color: crimson;
+	cursor: pointer;
+	grid-area: foot;
+}
+
+.head:hover,
+.nav:hover,
+.side:hover,
+.main:hover,
+.foot:hover{
+	background-color: black;
+	color: #fff;
+	transition: .8s;
+}
+
+@media(max-width: 760px)
+{
+	
+}
